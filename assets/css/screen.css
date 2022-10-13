@@ -6,6 +6,9 @@ html {
     width: 100%;
 }
 
+/*************/
+/** Header **/
+/*************/
 header {
     display: flex;
     flex-direction: row;
@@ -34,14 +37,44 @@ header ul {
 header li {
     margin-right: 0.5rem;
     font-size: 1.3rem;
+    padding: 0.5rem;
 }
 
 header a {
     text-decoration: none;
     color: rgb(63, 62, 62);
+    padding: 0.25rem;
 }
 
 header li + li {
     border-left: solid rgb(63, 62, 62);
     padding-left: 1rem;
+}
+
+.activeNav {
+    background-color: rgb(198, 197, 197, 0.8);
+    border: solid rgba(156, 156, 156, 0.8);
+}
+
+/***********/
+/** Main **/
+/***********/
+main {
+    margin-top: 1rem;
+}
+
+#banner {
+    background-image: url(../media/Mars-banner.jpg);
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 4%;
+    border-bottom-right-radius: 4%;
+    height: 500px;
+    background-size: cover;
+}
+
+main h1 {
+    font-size: 2rem;
+    color: rgb(255, 255, 255, 0.8);
+    text-align: center;
+    line-height: 150%;
 }

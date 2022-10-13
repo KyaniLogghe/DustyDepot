@@ -1,0 +1,76 @@
+@font-face {
+    font-family: spaceAge;
+    src: url("../../fonts/space_age/space-age.ttf");
+}
+@font-face {
+    font-family: gtek;
+    src: url("../../fonts/gtek-technology-font/GtekTechnology-B9aB.ttf");
+}
+
+body {
+    font-family: Verdana, sans-serif;
+    background: rgb(18,18,26);
+    background: linear-gradient(345deg, rgba(18,18,26,1) 0%, rgba(11,10,31,1) 15%, rgba(2,0,36,1) 32%, rgba(24,27,56,1) 50%, rgba(40,45,61,1) 66%, rgba(25,27,39,1) 79%, rgba(20,21,30,1) 96%, rgba(18,18,26,1) 100%);
+    color: white;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*START OF HEADER*/
+header {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 1rem;
+    align-items: center;
+}
+
+h1{
+    font-family: gtek;
+    letter-spacing: 0.2rem;
+    color: white;
+    font-size: 4rem;
+    margin: 1rem 0 0 2rem;
+}
+em{
+    color: #F18F01;
+}
+
+nav ul{
+    display: flex;
+}
+nav ul li{
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+nav ul li:hover a{
+    transition: 1s ease;
+    color: #F18F01;
+    text-decoration: underline;
+}
+
+.socials{
+    margin-right: 5rem;
+}
+.socials ul{
+    display: flex;
+}
+.socials ul li{
+    margin: 0.5rem;
+}
+.socials img{
+    width: 2rem;
+}
+/*END OF HEADER*/

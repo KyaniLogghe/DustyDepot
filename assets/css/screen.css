@@ -62,7 +62,7 @@ header li + li {
 /***********/
 main {
     margin-top: 1rem;
-    height: 75%;
+    height: 70%;
 }
 
 #banner {
@@ -78,7 +78,19 @@ main h1 {
     font-size: 2rem;
     color: rgb(255, 255, 255, 0.8);
     text-align: center;
-    padding-top: 15%;
+    margin-bottom: 2rem;
+}
+
+#banner div {
+    text-align: center;
+}
+
+#banner a {
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+    background-color: rgb(87, 87, 87, 0.8);
+    border-radius: 3%;
 }
 
 #footerBorder {

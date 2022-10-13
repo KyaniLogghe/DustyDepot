@@ -1,63 +1,63 @@
 /***********/
 /** Main **/
 /**********/
-main {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2rem;
-}
 
-main h1 {
-    font-size: 2rem;
-    color: black;
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 2rem;
-}
-
-main section {
-    padding: 1rem;
-    border-radius: 4%;
-    width: 30%;
-    margin-bottom: 1rem;
-    text-align: center;
-}
-
-main section + section {
-    margin-left: 1rem;
-}
-
-main section:nth-child(odd) {
-    background-color: rgb(4, 141, 141);
-}
-
-main section:nth-child(even) {
-    background-color: rgb(165, 77, 5);
-}
-
-main img {
-    max-width: 40%;
-}
-
-main section li {
-    color: white;
-}
-
-.name {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-}
-
-.email {
-    margin-top: 0.5rem;
-    font-size: 0.8rem;
-    text-decoration: underline;
-}
-
-#ourTeamFlex {
+#our_team {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
+}
+
+
+
+main h2 {
+    font-family: gtek;
+    font-size: 3rem;
+    color: white;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+main section {
+    background-color: #FFFFFF;
+    border-bottom: #F18F01 0.5rem solid;
+    color: black;
+
+    padding-left: 2rem;
+    height: 22vh;
+    width: 25%;
+    margin-bottom: 2rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+main section img{
+    height: 22vh;
+}
+main section:hover, main section:focus-within {
+    transform: scale(1.1);
+    opacity: 60%;
+    transition: ease-in-out 0.5s;
+}
+.name {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.email {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    text-decoration: underline;
+}
+.background_rightunder{
+    opacity: 20%;
+    filter: blur(3px);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: gray;
+    z-index: -1;
 }

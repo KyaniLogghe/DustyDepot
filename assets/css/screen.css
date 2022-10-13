@@ -69,21 +69,22 @@ main {
 #banner {
     background-image: url(../media/Mars-banner.jpg);
     height: 100%;
+    text-align: center;
     background-repeat: no-repeat;
-    border-bottom-left-radius: 4%;
-    border-bottom-right-radius: 4%;
     background-size: cover;
+    width: 84%;
+    border-top-right-radius: 4%;
+    border-bottom-right-radius: 4%;
+}
+
+#banner div {
+    padding-top: 15%;
 }
 
 main h1 {
     font-size: 2rem;
     color: rgb(255, 255, 255, 0.8);
-    text-align: center;
     margin-bottom: 2rem;
-}
-
-#banner div {
-    text-align: center;
 }
 
 #banner a {
@@ -93,6 +94,60 @@ main h1 {
     background-color: rgb(87, 87, 87, 0.8);
     border-radius: 3%;
 }
+
+/************/
+/** Aside **/
+/************/
+#mainAsideFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100%;
+}
+
+aside {
+    background-color: rgb(114, 112, 110);
+    width: 15%;
+    height: 100%;
+    border-top-left-radius: 4%;
+    border-bottom-left-radius: 4%;
+}
+
+aside article {
+    padding: 0.5rem;
+    height: 25%;
+    margin: 1rem 0.5rem 0.5rem 0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+aside article:nth-child(even) {
+    background-color: rgb(53, 53, 239);
+    border: solid blue;
+}
+
+aside article:nth-child(odd) {
+    background-color: rgb(204, 9, 9);
+    border: solid rgb(111, 2, 2);
+}
+
+aside img {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    max-width: 80%;
+}
+
+aside h2 {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+aside a {
+    color: white;
+}
+
+
 
 /*************/
 /** Footer **/

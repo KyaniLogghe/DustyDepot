@@ -21,6 +21,7 @@ main section {
     border-radius: 4%;
     width: 30%;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 main section + section {

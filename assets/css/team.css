@@ -1,0 +1,62 @@
+/***********/
+/** Main **/
+/**********/
+main {
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+}
+
+main h1 {
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+main section {
+    padding: 1rem;
+    border-radius: 4%;
+    width: 30%;
+    margin-bottom: 1rem;
+}
+
+main section + section {
+    margin-left: 1rem;
+}
+
+main section:nth-child(odd) {
+    background-color: rgb(4, 141, 141);
+}
+
+main section:nth-child(even) {
+    background-color: rgb(165, 77, 5);
+}
+
+main img {
+    max-width: 40%;
+}
+
+main section li {
+    color: white;
+}
+
+.name {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.email {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    text-decoration: underline;
+}
+
+#ourTeamFlex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}

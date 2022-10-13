@@ -68,7 +68,6 @@ main {
     background-repeat: no-repeat;
     border-bottom-left-radius: 4%;
     border-bottom-right-radius: 4%;
-    height: 500px;
     background-size: cover;
 }
 
@@ -77,4 +76,58 @@ main h1 {
     color: rgb(255, 255, 255, 0.8);
     text-align: center;
     line-height: 150%;
+}
+
+#footerBorder {
+    margin-top: 1rem;
+    width: 90%;
+    margin-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    border-bottom: solid rgb(63, 62, 62);
+}
+
+/*************/
+/** Footer **/
+/*************/
+footer {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+footer li {
+    background-repeat: no-repeat;
+    padding-left: 1.5rem;
+    line-height: 150%;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+}
+
+#instagram {
+    background-image: url(../media/instagram.png);
+    background-size: 25%;
+    text-indent: 10%;
+}
+
+#facebook {
+    background-image: url(../media/facebook.png);
+    background-size: 25%;
+    text-indent: 10%;
+}
+
+#twitter {
+    background-image: url(../media/twitter.png);
+    background-size: 50%;
+    text-indent: 20%;
 }

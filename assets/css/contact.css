@@ -1,0 +1,95 @@
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes spin-negative {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
+
+
+.planetPosition {
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 40rem;
+    height: 30rem;
+    justify-content: center;
+    align-items: center;
+}
+.far-orbit {
+    width: 40rem;
+    height: 40rem;
+    border: 0.1rem solid gray;
+    border-radius: 50%;
+    opacity: 10%;
+}
+.near-orbit {
+    width: 20rem;
+    height: 20rem;
+    border: 0.1rem solid gray;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 10%;
+}
+.mid-orbit {
+    width: 30rem;
+    height: 30rem;
+    position: absolute;
+    border: 0.1rem solid gray;
+    border-radius: 50%;
+    opacity: 10%;
+}
+.mainPlanet {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-image: url("../media/zon.png");
+    background-size: 15rem;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.smallPlanet {
+    position: absolute;
+}
+.earth {
+    width: 33rem;
+    height: 3rem;
+    animation: spin 9s linear 0s infinite;
+    top: 6rem;
+    left: -6.5rem;
+}
+.mars {
+    width: 42rem;
+    height: 2rem;
+    animation: spin 12s linear 0s infinite;
+    top: 6.5rem;
+    left: -11rem;
+}
+.venus {
+    width: 22rem;
+    height: 2rem;
+    animation: spin 7s linear 0s infinite;
+    top: 6.5rem;
+    left: -1rem;
+}
+
+.earth img{
+    max-width: 3.7rem;
+}
+.venus img{
+    max-width: 10%;
+}
+.mars img{
+    max-width: 2rem;
+}

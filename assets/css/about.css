@@ -10,3 +10,9 @@ h2{
     transform: translate(-50% -50%);
     width: 28%;
 }
+.about h2{
+    margin-bottom: 2rem;
+}
+.about p{
+    margin-bottom: 0.5rem;
+}

@@ -74,3 +74,20 @@ nav ul li:hover a{
     width: 2rem;
 }
 /*END OF HEADER*/
+
+.line{
+    border-left: 0.1em solid white;
+    opacity: 5%;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+}
+#left{
+    left: 22%;
+}
+#mid{
+    left: 50%;
+}
+#right{
+    left: 78%;
+}

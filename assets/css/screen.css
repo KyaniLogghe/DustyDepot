@@ -76,28 +76,6 @@ main{
     background-color: gray;
     z-index: -1;
 }
-.dots_left{
-    top: 45%;
-    height: 5rem;
-    position: absolute;
-    left: 1%;
-    border-left: white dotted 0.8rem;
-    opacity: 40%;
-}
-.line{
-    border-left: 0.1em solid white;
-    opacity: 5%;
-    position: absolute;
-    top: 0;
-    height: 100vh;
-}
-#left{
-    left: 22%;
-}
-#mid{
-    left: 50%;
-}
-#right{
-    left: 78%;
-}
+
+
 

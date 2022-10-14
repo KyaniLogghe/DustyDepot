@@ -120,7 +120,6 @@ body{
 .earth img, .venus img, .mars img{
     animation: spin 10s linear 0s infinite;
 }
-
 .earth img{
     max-width: 3.7rem;
 }

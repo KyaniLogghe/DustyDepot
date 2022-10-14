@@ -76,13 +76,6 @@ main{
     background-color: gray;
     z-index: -1;
 }
-.dots_left{
-    top: 45%;
-    height: 5rem;
-    position: absolute;
-    left: 1%;
-    border-left: white dotted 0.8rem;
-    opacity: 40%;
-}
+
 
 

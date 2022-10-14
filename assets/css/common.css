@@ -12,6 +12,7 @@ body {
     background: rgb(18,18,26);
     background: linear-gradient(345deg, rgba(18,18,26,1) 0%, rgba(11,10,31,1) 15%, rgba(2,0,36,1) 32%, rgba(24,27,56,1) 50%, rgba(40,45,61,1) 66%, rgba(25,27,39,1) 79%, rgba(20,21,30,1) 96%, rgba(18,18,26,1) 100%);
     color: white;
+    overflow: hidden;
 }
 
 html, body {
@@ -42,6 +43,7 @@ h1{
 }
 em{
     color: #F18F01;
+    border-bottom: 0.01rem solid #F18F01;
 }
 
 nav ul{
@@ -71,6 +73,7 @@ nav ul li:hover a{
 }
 .socials img{
     width: 2rem;
+    filter: invert(100%) sepia(0%) saturate(7490%) hue-rotate(67deg) brightness(101%) contrast(101%);
 }
 .socials img:hover{
     filter: invert(54%) sepia(92%) saturate(2220%) hue-rotate(8deg) brightness(103%) contrast(102%);

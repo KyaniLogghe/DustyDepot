@@ -1,18 +1,113 @@
 h2{
     letter-spacing: 0.5rem;
     font-family: gtek;
-    font-size: 5rem;
+    font-size: 4.5rem;
 }
 .about{
     position: fixed;
-    top: 40%;
+    top: 30%;
     left: 22%;
     transform: translate(-50% -50%);
-    width: 28%;
+}
+.about div{
+    width: 36%;
 }
 .about h2{
     margin-bottom: 2rem;
 }
 .about p{
     margin-bottom: 0.5rem;
+}
+
+
+.planet{
+    position: fixed;
+    top: 25%;
+    right: 10%;
+
+    width: 30em;
+    height: 30em;
+    box-shadow: inset -2em -2em 2em #080b10, -0.5em -0.5em 1em #11191f;
+
+    animation: rotate 10s linear infinite, up-and-down 8s linear infinite;
+
+    border-radius: 50%;
+    background: url("../media/modern-map.png") repeat;
+    background-size: 200% 100%;
+}
+@keyframes rotate {
+    to {
+        background-position: -200% 0;
+    }
+}
+@keyframes up-and-down {
+    0%{
+        top: 20%;
+    }
+    50%{
+        top: 30%;
+    }
+    100%{
+        top: 20%;
+    }
+}
+#one{
+    position: absolute;
+    border-top: 0.1rem solid #F18F01;
+    bottom: 2%;
+    width: 50%;
+}
+#two{
+    position: absolute;
+    border-left: 0.1rem solid #F18F01;
+    bottom: 2%;
+    height: 2%;
+    left: 50.1%;
+    transform: rotate(20deg);
+}
+#three{
+    position: absolute;
+    border-top: 0.1rem solid #F18F01;
+    bottom: 3.8%;
+    width: 50%;
+    left: 50.3%;
+}
+
+.roller{
+    width: 2rem;
+    height: 2rem;
+    background: rgb(241,143,1);
+    background: linear-gradient(281deg, rgba(241,143,1,1) 0%, rgba(117,79,23,1) 100%);
+    border-radius: 50%;
+
+    bottom: 1.25rem;
+
+    animation: spin 1s linear infinite, moveLeftToRight 5s linear infinite;
+
+    position: fixed;
+    left: 0;
+}
+
+@keyframes moveLeftToRight {
+    0%   {
+        left: -5vw;
+    }
+    51% {
+        bottom: 1.25rem
+    }
+    52%{
+        bottom: 2.35rem;
+    }
+    100% {
+        left: 100vw;
+        bottom: 2.35rem
+    }
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

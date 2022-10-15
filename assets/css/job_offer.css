@@ -1,0 +1,10 @@
+
+.jobs{
+    position: fixed;
+    top: 40%;
+    left: 22%;
+}
+.jobs h2{
+    font-family: gtek;
+    font-size: 5rem;
+}

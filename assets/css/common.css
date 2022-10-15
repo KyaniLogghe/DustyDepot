@@ -105,3 +105,11 @@ nav ul li:hover a{
     border-left: white dotted 0.8rem;
     opacity: 40%;
 }
+
+#background_video {
+    opacity: 10%;
+    position: fixed;
+    bottom: 0;
+    max-width: 100%;
+    z-index: -1;
+}

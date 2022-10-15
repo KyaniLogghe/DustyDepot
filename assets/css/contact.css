@@ -26,7 +26,12 @@ body{
     display: flex;
     justify-content: space-between;
 }
-
+.addresses a{
+    color: #FFFFFF;
+}
+.addresses a:hover{
+    color: #F18F01;
+}
 #socials ul{
     display: flex;
     align-items: center;
@@ -44,6 +49,9 @@ body{
 #socials img:hover{
     opacity: 70%;
 }
+
+
+
 /*SOLAR SYSTEM*/
 .planetPosition {
     position: absolute;

@@ -30,11 +30,16 @@ main section {
 }
 .job{
     padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
 
 .job div{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    
 }
 .job img{
     max-height: 22vh;
@@ -54,9 +59,11 @@ main section {
     margin-bottom: 1rem;
 }
 .job p{
-    font-size: 0.7rem;
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
 }
 .job button{
+    
     font-size: 0.7rem;
     margin-top: 1rem;
     margin-bottom: 1rem;
@@ -68,9 +75,11 @@ main section {
     width: 40%;
     margin-right: 1rem;
     cursor: pointer;
+    
 }
-#info{
-    background-color: #272c3c;
+#buttons{   
+    display: flex;
+    flex-direction: row;
 }
 .job:hover, .job:focus-within {
     transform: scale(1.1);
@@ -78,7 +87,91 @@ main section {
     transition: ease-in-out 0.5s;
 }
 
-#buttons{
+#info{
+    background-color: #272c3c;
+}
+
+/* pop up */
+.pop-up{
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 20rem;
+    width: 70rem;
+
+    border-radius: 0.5rem;
+
+    background-color: #343847;
+    color: white;
+
+  
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 9999;
+}
+.pop-up div{
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup-background {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.5s linear;
+}
+.popup-background.visible {
+    z-index: 100;
+    opacity: 0.6;
+}
+
+.pop-up-buttons{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.pop-up-buttons p, button[type="button"]{
+    font-size: 1.3rem;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+    background-color: #f18f01;
+    border-radius: 0.2rem;
+    width: 12rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+    border: none;
+    color: white;
+}
+.pop-up-buttons p:hover, button[type="button"]:hover{
+    opacity: 0.7;
+    background-color: white;
+    color: black;
+}
+
+div.hidden{
+    display: none;
+}
+
+#close{
+    margin: 0.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
 }

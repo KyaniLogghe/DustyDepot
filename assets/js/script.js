@@ -39,7 +39,7 @@ async function infoPopµp(e) {
   popup.innerHTML = "";
   let description = "";
   let requirements = "";
-  await fetch("/DustyDepot/assets/js/jobs.json")
+  await fetch("../assets/js/jobs.json")
     .then((response) => response.json())
     .then((json) =>
       json.forEach(function (info) {

@@ -25,52 +25,44 @@ function makeButtonIDtheJobName() {
 
   let buttons = document.querySelectorAll("#info");
   buttons.forEach((button, i) => button.classList.add(names[i]));
+  let buttons2 = document.querySelectorAll("#apply");
+  buttons2.forEach((button, i) => button.classList.add(names[i]));
   console.log(names);
 }
 
-function infoPopµp(e) {
+async function infoPopµp(e) {
   let backgroundPopup = document.querySelector(".popup-background");
   backgroundPopup.classList.add("visible");
   let job = e.target.classList.value.split("_").join(" ");
   document.querySelector(".pop-up").classList.toggle("hidden");
   let popup = document.querySelector(".pop-up div");
   popup.innerHTML = "";
-
   let description = "";
-  //inserting the job form
-  switch (job) {
-    case "warehouse manager":
-      description = ` <p>We are looking for an organized warehouse manager to supervise the receipt, dispatching, and storage of merchandise in our warehouse. The warehouse manager will oversee picking, storage, receiving, dispatching, security, maintenance, sanitation, and administrative functions. You will oversee, train, evaluate and reward staff. You will ensure the maintenance of company assets.
-
-        To ensure success you need to multitask effectively in a fast-paced, dynamic environment, and perform your duties in a manner that maximizes profits. Top applicants are dedicated, competent, and have strong leadership skills. </p>  <h4> responsibilities : </h4> <ul>  <li> Overseeing receiving, warehousing, and distribution operations. </li>
-        <li> Implementing operational policies and procedures. </li>
-        <li>  Implementing and overseeing security operations.  </li>
-        <li> Ensuring effective and safe use of warehouse equipment. </li> 
-        <li> Ensuring the safety of staff.  </li>
-        <li>  Assisting with deliveries where required. </li> </ul>`;
-      break;
-    case "team manager":
-      description = "2";
-      break;
-    case "warehouse employee":
-      description = "3";
-      break;
-    case "customer service representitive":
-      description = "4";
-      break;
-    case "customer service employee":
-      description = "5";
-      break;
-    case "it manager":
-      description = "6";
-      break;
-  }
+  let requirements = "";
+  await fetch("/DustyDepot/assets/js/jobs.json")
+    .then((response) => response.json())
+    .then((json) =>
+      json.forEach(function (info) {
+        if (info.title == job) {
+          console.log(info.mainParagraph);
+          description = info.mainParagraph;
+            info.responsibilities.forEach(function (requirement) {
+            requirements += `<li>${requirement}</li>`;
+            });
+        }
+      })
+    );
+  console.log(description);
   popup.insertAdjacentHTML(
     "afterbegin",
     `
     <div id="information">
     <h3>${job}</h3>
-    ${description}
+    <p>${description} </p>
+    <h4>Requirements</h4>
+    <ul>
+     ${requirements}
+    </ul>
     </div>
     `
   );
@@ -81,10 +73,13 @@ function applyPopµp(e) {
   let backgroundPopup = document.querySelector(".popup-background");
   backgroundPopup.classList.add("visible");
   let job = e.target.classList.value.split("_").join(" ");
+  console.log(job);
   console.log("apply clicked");
   let popup = document.querySelector(".pop-up div");
   popup.innerHTML = "";
-  popup.insertAdjacentHTML("afterbegin", `
+  popup.insertAdjacentHTML(
+    "afterbegin",
+    `
   <form> 
   <div class="rendered-form">
   <div class="">
@@ -102,7 +97,6 @@ function applyPopµp(e) {
       <input type="date" name="date-1671620155874" access="false" id="date-1671620155874" required>
   </div>
   <div class="formbuilder-textarea form-group field-textarea-1671620017313">
-      <label for="textarea-1671620017313" class="formbuilder-textarea-label">motivation letter</label>
       <textarea type="textarea" class="form-control" name="textarea-1671620017313" access="false" id="textarea-1671620017313" placeholder="motivation letter" required></textarea>
   </div>
   <div class="formbuilder-file form-group field-file-1671619950969">
@@ -113,7 +107,8 @@ function applyPopµp(e) {
   <input type="submit" value="Submit">
   </div>
 </div>
-</form>`);
+</form>`
+  );
   document.querySelector(".pop-up").classList.toggle("hidden");
   document.querySelector("#close").addEventListener("click", closePopµp);
 }

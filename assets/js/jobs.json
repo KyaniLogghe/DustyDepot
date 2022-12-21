@@ -1,0 +1,65 @@
+[
+  {
+    "title": "warehouse manager",
+    "mainParagraph": "We are looking for an organized warehouse manager to supervise the receipt, dispatching, and storage of merchandise in our warehouse. The warehouse manager will oversee picking, storage, receiving, dispatching, security, maintenance, sanitation, and administrative functions. You will oversee, train, evaluate and reward staff. You will ensure the maintenance of company assets.\n\nTo ensure success you need to multitask effectively in a fast-paced, dynamic environment, and perform your duties in a manner that maximizes profits. Top applicants are dedicated, competent, and have strong leadership skills.",
+    "responsibilities": [
+      "Overseeing receiving, warehousing, and distribution operations.",
+      "Implementing operational policies and procedures.",
+      "Implementing and overseeing security operations.",
+      "Ensuring effective and safe use of warehouse equipment.",
+      "Ensuring the safety of staff.",
+      "Assisting with deliveries where required."
+    ]
+  },
+  {
+    "title": "team manager",
+    "mainParagraph": "Team managers are responsible for overseeing the work of their team. They commonly act as a liaison between their team and upper management, ensuring that everyone is on the same page with regard to company goals and objectives.\n\n      Team managers may also be tasked with managing the day-to-day operations of their team. This might include scheduling shifts or assigning tasks to individual members, providing feedback, resolving conflicts, etc.",
+    "responsibilities": [
+      "Choosing the team’s lineup based on player performance, team chemistry, and other factors",
+      "Building and maintaining relationships with team sponsors, including designing promotions that promote their products or services",
+      "Managing the team’s finances and accounting activities to ensure compliance with league rules",
+      "Overseeing travel arrangements for team road trips and arranging travel accommodations for away games"
+    ]
+  },
+  {
+    "title": "warehouse employee",
+    "mainParagraph": "A Warehouse Worker is responsible for varied daily tasks such as restocking shelves, accepting incoming orders, processing and packing orders, counting inventory and ensuring orders are shipped in a timely manner",
+    "responsibilities": [
+      "Prepare and complete orders for delivery or pickup according to schedule (load, pack, wrap, label, ship)",
+      "Receive and process warehouse stock products (pick, unload, label, store)",
+      "Perform inventory controls and keep quality standards high for audits",
+      "Keep a clean and safe working environment and optimise space utilisation"
+    ]
+  },
+  {
+    "title": "customer service representitive",
+    "mainParagraph": "Is the boss of the customer service employees , and  a customer service representative supports customers by providing helpful information, answering questions, and responding to complaints. They’re the front line of support for clients and customers and they help ensure that customers are satisfied with products, services, and features.",
+    "responsibilities": [
+      "Maintaining a positive, empathetic, and professional attitude toward customers at all times.",
+      "Responding promptly to customer inquiries.",
+      "Communicating with customers through various channels.",
+      "Acknowledging and resolving customer complaints.",
+      "Knowing our products inside and out so that you can answer questions."
+    ]
+  },
+  {
+    "title": "customer service employee",
+    "mainParagraph": "A Customer Service Representative works with clients who have complaints, orders, or require information about products/services purchased from the organization. They also provide solutions that fit those individualized situations and prioritize the customers’ needs at each step of the process.",
+    "responsibilities": [
+      "Take the extra mile to engage customers",
+      "Keep records of customer interactions, process customer accounts and file documents",
+      "Handle customer complaints, provide appropriate solutions and alternatives within the time limits; follow up to ensure resolution",
+      "Provide accurate, valid and complete information by using the right methods/tools"
+    ]
+  },
+  {
+    "title": "it manager",
+    "mainParagraph": "An IT Manager’s job description should include the following obligations as a representative of the IT division and a person in charge of the systems and data used by the entire organization. While an IT manager’s daily duties will vary from company to company, the following are the",
+    "responsibilities": [
+      "Conducting routine evaluations of network and data security",
+      "Locating and seizing chances to enhance and update software and systems ",
+      "Creating and implementing the organization’s IT policy and best practice manuals",
+      "reating workshops and training programmes for staff"
+    ]
+  }
+]

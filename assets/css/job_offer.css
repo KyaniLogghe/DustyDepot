@@ -1,10 +1,246 @@
 
 .jobs{
-    position: fixed;
-    top: 40%;
-    left: 22%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
-.jobs h2{
+h2{
     font-family: gtek;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     font-size: 5rem;
+}
+
+main section {
+    background-color: #ffffff97;
+    border-bottom: #F18F01 0.5rem solid;
+    color: black;
+    
+    padding-left: 2rem;
+    height: 22vh;
+    width: 25%;
+    margin-bottom: 2rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.job{
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.job div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.job img{
+    max-height: 22vh;
+    max-width: 50%;
+    float: left;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.38);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.38);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.38);
+}
+
+.job h3{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.job h4{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+.job p{
+    font-size: 0.8rem;
+    margin-bottom: 1rem;
+}
+.job button{
+    
+    font-size: 0.7rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: none;
+    background-color: #F18F01;
+    color: white;
+    border-radius: 0.5rem;
+    width: 40%;
+    margin-right: 1rem;
+    cursor: pointer;
+    
+}
+#buttons{   
+    display: flex;
+    flex-direction: row;
+}
+.job:hover, .job:focus-within {
+    transform: scale(1.1);
+    opacity: 60%;
+    transition: ease-in-out 0.5s;
+}
+
+#info{
+    background-color: #272c3c;
+}
+
+/* pop up */
+.pop-up{
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 27.5rem;
+    width: 48rem;
+
+    border-radius: 0.5rem;
+
+    background-color: #343847;
+    color: white;
+
+  
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    z-index: 9999;
+}
+.pop-up div{
+}
+
+.popup-background {
+    z-index: -1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.5s linear;
+}
+.popup-background.visible {
+    z-index: 100;
+    opacity: 0.6;
+}
+
+.pop-up-buttons{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.pop-up-buttons p, button[type="button"]{
+    font-size: 1.3rem;
+    padding: 0.2rem;
+    display: flex;
+    justify-content: center;
+    background-color: #f18f01;
+    border-radius: 0.2rem;
+    width: 12rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+    border: none;
+    color: white;
+}
+.pop-up-buttons p:hover, button[type="button"]:hover{
+    opacity: 0.7;
+    background-color: white;
+    color: black;
+}
+
+div.hidden{
+    display: none;
+}
+
+#close{
+    margin: 0.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+
+
+
+/*  form css */
+form h3{
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+#information h3{
+    font-size: 1.5rem;
+    margin-bottom: 1.2rem;
+    text-align: center;
+    color: #F18F01;
+}
+
+#information p{
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+#information h4{
+    margin-left: 1.5rem;
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    color: #F18F01
+}
+
+#information ul{
+    list-style-type: circle;
+    margin-left: 1.5rem;
+    font-size: 1.5rem;
+}
+
+#information li{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    display: list-item;
+}
+
+form input[type="text"], form input[type="email"], form input[type="tel"], form textarea{
+    width: 50%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: 0.1rem solid #F18F01;
+    background-color: #343847;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.5s ease-in;
+}
+form textarea{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 2rem;
+}
+
+form input[type="submit"]{
+    font-size: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: none;
+    background-color: #F18F01;
+    color: white;
+    border-radius: 0.5rem;
+    width: 20%;
+    cursor: pointer;
+    transition: all 0.5s ease-in;
+}
+form{
+    margin-left: 1rem;
 }

@@ -83,7 +83,7 @@ function applyPopµp(e) {
   <form> 
   <div class="rendered-form">
   <div class="">
-      <h3>Info</h3> <p>Here is some info about ${job}</p></div>
+      <h3>Apply now!</h3> <p>You can apply here for the job: ${job}</p></div>
   <div class="formbuilder-text form-group field-text-1671619917753">
       <label for="text-1671619917753" class="formbuilder-text-label">Name</label>
       <input type="text" placeholder="John Doe" name="text-1671619917753" access="false" maxlength="20" id="text-1671619917753" required>

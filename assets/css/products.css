@@ -1,0 +1,90 @@
+h2 {
+  font-family: gtek;
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-size: 5rem;
+}
+#products {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+#products article {
+  background-color: #ffffff97;
+  border-bottom: #f18f01 0.5rem solid;
+  color: black;
+
+  height: 43vh;
+  width: 25%;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  font-weight: bold;
+}
+em {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+h4{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+#containerprice{
+    display: flex;
+    flex-direction: row;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    justify-content: space-between;
+    text-align: center;
+}
+#containerprice div{
+background-color: #ffffffd8;
+  border-bottom: #f18f01 0.5rem solid;
+  color: black;
+
+  height: 7vh;
+  width: 25%;
+  margin-bottom: 2rem;
+  text-align: center;
+  border-radius: 0.2rem;
+}
+
+#warehousePrice{
+    display: flex;
+    flex-direction: row;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    justify-content: center;
+    text-align: center;
+}
+#warehousePrice div{
+    background-color: #ffffffd8;
+    border-bottom: #f18f01 0.5rem solid;
+    color: black;
+  
+    height: 7vh;
+    width: 35%;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-radius: 0.2rem;
+}
+#test{
+    justify-self: flex-end;
+}
+#test2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: flex-end;
+
+}
+article{
+    padding: 1rem;
+}

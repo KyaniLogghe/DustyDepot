@@ -3,16 +3,15 @@
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
-  console.log("DOM loaded");
   makeButtonIDtheJobName();
 
   document
-    .querySelectorAll("#info")
-    .forEach((button) => button.addEventListener("click", infoPopµp));
+    .querySelectorAll(".info")
+    .forEach((button) => button.addEventListener("click", infoPopup));
 
   document
-    .querySelectorAll("#apply")
-    .forEach((button) => button.addEventListener("click", applyPopµp));
+    .querySelectorAll(".apply")
+    .forEach((button) => button.addEventListener("click", applyPopup));
 }
 
 function makeButtonIDtheJobName() {
@@ -23,14 +22,13 @@ function makeButtonIDtheJobName() {
       names.push(name.textContent.split(" ").join("_").toLowerCase())
     );
 
-  let buttons = document.querySelectorAll("#info");
+  let buttons = document.querySelectorAll(".info");
   buttons.forEach((button, i) => button.classList.add(names[i]));
-  let buttons2 = document.querySelectorAll("#apply");
+  let buttons2 = document.querySelectorAll(".apply");
   buttons2.forEach((button, i) => button.classList.add(names[i]));
-  console.log(names);
 }
 
-async function infoPopµp(e) {
+async function infoPopup(e) {
   let backgroundPopup = document.querySelector(".popup-background");
   backgroundPopup.classList.add("visible");
   let job = e.target.classList.value.split("_").join(" ");
@@ -43,8 +41,7 @@ async function infoPopµp(e) {
     .then((response) => response.json())
     .then((json) =>
       json.forEach(function (info) {
-        if (info.title == job) {
-          console.log(info.mainParagraph);
+        if ("info " + info.title === job) {
           description = info.mainParagraph;
             info.responsibilities.forEach(function (requirement) {
             requirements += `<li>${requirement}</li>`;
@@ -52,7 +49,7 @@ async function infoPopµp(e) {
         }
       })
     );
-  console.log(description);
+  console.log(description)
   popup.insertAdjacentHTML(
     "afterbegin",
     `
@@ -66,15 +63,13 @@ async function infoPopµp(e) {
     </div>
     `
   );
-  document.querySelector("#close").addEventListener("click", closePopµp);
+  document.querySelector("#close").addEventListener("click", closePopup);
 }
 
-function applyPopµp(e) {
+function applyPopup(e) {
   let backgroundPopup = document.querySelector(".popup-background");
   backgroundPopup.classList.add("visible");
   let job = e.target.classList.value.split("_").join(" ");
-  console.log(job);
-  console.log("apply clicked");
   let popup = document.querySelector(".pop-up div");
   popup.innerHTML = "";
   popup.insertAdjacentHTML(
@@ -87,6 +82,7 @@ function applyPopµp(e) {
   <div class="formbuilder-text form-group field-text-1671619917753">
       <label for="text-1671619917753" class="formbuilder-text-label">Name</label>
       <input type="text" placeholder="John Doe" name="text-1671619917753" access="false" maxlength="20" id="text-1671619917753" required>
+  </div>
   </div>
   <div class="formbuilder-text form-group field-text-1671620106132">
       <label for="text-1671620106132" class="formbuilder-text-label">e-mail</label>
@@ -110,10 +106,10 @@ function applyPopµp(e) {
 </form>`
   );
   document.querySelector(".pop-up").classList.toggle("hidden");
-  document.querySelector("#close").addEventListener("click", closePopµp);
+  document.querySelector("#close").addEventListener("click", closePopup);
 }
 
-function closePopµp() {
+function closePopup() {
   document.querySelector(".pop-up").classList.toggle("hidden");
   let backgroundPopup = document.querySelector(".popup-background");
   backgroundPopup.classList.remove("visible");

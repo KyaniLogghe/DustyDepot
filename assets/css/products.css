@@ -14,7 +14,6 @@ h2 {
   background-color: #ffffff97;
   border-bottom: #f18f01 0.5rem solid;
   color: black;
-
   height: 43vh;
   width: 25%;
   margin-bottom: 2rem;
@@ -24,10 +23,6 @@ h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
   margin-top: 1rem;
-  font-weight: bold;
-}
-em {
-  font-size: 1.5rem;
   font-weight: bold;
 }
 h4{
